@@ -1,11 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import HeroSection from "../../HeroSection";
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from "./Data";
 function home() {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
+  return (
+    <>
+      <HeroSection {...homeObjOne} />
+      <HeroSection {...homeObjTwo} />
+      <HeroSection {...homeObjThree} />
+      <HeroSection {...homeObjFour} />
+    </>
+  );
 }
 
-export default home
+export default home;
